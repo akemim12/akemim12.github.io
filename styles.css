@@ -1,0 +1,19 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+
+p img {
+    height: 3em;
+    width: auto;
+}
+
+body {
+    background-image: url('images\img_ontario.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
