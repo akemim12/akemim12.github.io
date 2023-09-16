@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+<head>
+<!-- Include Leaflet CSS and JavaScript -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<!-- Include Leaflet-GPX plugin -->
+<script src="https://unpkg.com/leaflet-gpx@1.4.1/gpx.js"></script>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 <!-- Bootstrap Font Icon CSS -->
@@ -7,7 +13,8 @@
 <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="myScript.js"></script>
-<link rel="stylesheet" href="styles.css"></head>
+<link rel="stylesheet" href="styles.css">
+</head>
 <body style="background-image">
         <div class="topnav" id="myTopnav">
                 <a href="index.html" class="active">Home</a>
@@ -26,7 +33,24 @@
 <h1>2023 Activities</h1>
 <h3>Hiking</h3>
 <hr style="border: none; border-top: 2px dotted black" />
-<div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="9816957735"></div><script src="https://strava-embeds.com/embed.js"></script>
+<div id="map" style="height: 500px;"></div>
+<script>
+    // Initialize the map
+    var map = L.map('map').setView([51.505, -0.09], 13); // Set your initial coordinates and zoom level
+
+    // Add a tile layer (you can use a different tile provider)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Load the GPX file and display it on the map
+    new L.GPX('maps/Josephine_Peak.gpx', {
+        async: true,
+    }).on('loaded', function (e) {
+        map.fitBounds(e.target.getBounds());
+    }).addTo(map);
+</script>
 
 </center>
 <hr>
