@@ -83,9 +83,34 @@ p img {
     display: table;
   }
 
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
-  }
+ /* Style for the container that holds both text and image */
+.content {
+  display: flex; /* Display children side by side */
+  align-items: center; /* Vertically center the content */
+  width: 50%;
+  padding: 10px;
+}
+
+/* Style for the text container */
+.text {
+  float: right;
+  flex: 1; /* Take up remaining space in the container */
+  padding: 10px; /* Add padding for spacing */
+}
+
+/* Style for the image container */
+.image {
+  flex-shrink: 0; /* Prevent image from shrinking */
+  max-width: 50%; /* Set a specific max width for the image (adjust as needed) */
+}
+
+/* Style for the image itself (optional) */
+.image img {
+  width: 100%; /* Ensure the image takes up the entire container width */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.main{
+  padding-left:10%;
+}
+

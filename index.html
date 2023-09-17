@@ -21,38 +21,28 @@
                 <a href="gallery.html">Gallery</a>
                 <a href="tool.html">Tool</a>
                 <a href="#about">About</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
               </div>
 <div class="header">
 <p><img src="images\hiking_2.png"><img src="images\track.png"><img src="images\chopsticks.png"><img src="images\reading-book.png"></p>
 <P>California Uncovered: Hiking, Cycling, and Savoring SoCal</P>
 </div>
-<center>
+<div class="main">
 <h1>2023 Activities</h1>
-<h3>Hiking</h3>
+<br><br>
+<h3><i class="bi bi-diamond"></i> Hiking</h3>
+<div class="content">
+  <div class="text">
+    <h6><a href="https://www.alltrails.com/trail/us/california/josephine-peak-trail"><i class="bi bi-caret-right"></i> Josephine Peak Trail</a></h6>
+    <P>Length: 7.4 mi<br>Elevation Gain: 1843<br>Route Type: Out&Back<br>Difficultiy: Moderate<br>Time: 2:48<br>Parking: Easy</P>
+  </div>
+  <div class="image">
+    <img src="images\josephine_peak.jpg">
+  </div>
+</div>
+<p>Trail Map</p>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1GUbr3dATsEN7JpbeFlbMSlp2T2tisiM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
 <hr style="border: none; border-top: 2px dotted black" />
-<div id="map" style="height: 500px;"></div>
-<script>
-    // Initialize the map
-    var map = L.map('map').setView([51.505, -0.09], 13); // Set your initial coordinates and zoom level
-
-    // Add a tile layer (you can use a different tile provider)
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    // Load the GPX file and display it on the map
-    new L.GPX('maps/Josephine_Peak.gpx', {
-        async: true,
-    }).on('loaded', function (e) {
-        map.fitBounds(e.target.getBounds());
-    }).addTo(map);
-</script>
-
-</center>
+</div>
 <hr>
 <sup id="fn1">1. Hiking icons created by Smashicons - Flaticon<a href="https://www.flaticon.com/free-icons/hiking" title="hiking icons">↩</a></sup>
 <sup id="fn2">2. Book icons created by Freepik - Flaticon<a href="https://www.flaticon.com/free-icons/book" title="book icons">↩</a></sup>
