@@ -1,52 +1,125 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!-- Include Leaflet CSS and JavaScript -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<!-- Include Leaflet-GPX plugin -->
-<script src="https://unpkg.com/leaflet-gpx@1.4.1/gpx.js"></script>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-<!-- Bootstrap Font Icon CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="myScript.js"></script>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body style="background-image">
-        <div class="topnav" id="myTopnav">
-                <a href="index.html" class="active">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="tool.html">Tool</a>
-                <a href="#about">About</a>
-          </div>
-<div class="header">
-<p><img src="images\hiking_2.png"><img src="images\track.png"><img src="images\chopsticks.png"><img src="images\reading-book.png"></p>
-<P>California Uncovered: Hiking, Cycling, and Savoring SoCal</P>
-</div>
-<div class="main">
-<h1>2023 Activities</h1>
-<br><br>
-<h3><i class="bi bi-diamond"></i> Hiking</h3>
-<div class="content">
-  <div class="text">
-    <h6><a href="https://www.alltrails.com/trail/us/california/josephine-peak-trail"><i class="bi bi-caret-right"></i> Josephine Peak Trail</a></h6>
-    <P>Length: 7.4 mi<br>Elevation Gain: 1843<br>Route Type: Out&Back<br>Difficultiy: Moderate<br>Time: 2:48<br>Parking: Easy</P>
-  </div>
-  <div class="image">
-    <img src="images\josephine_peak.jpg">
-  </div>
-</div>
-<p>Trail Map</p>
-  <iframe src="https://www.google.com/maps/d/embed?mid=1GUbr3dATsEN7JpbeFlbMSlp2T2tisiM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-<hr style="border: none; border-top: 2px dotted black" />
-</div>
-<hr>
-<sup id="fn1">1. Hiking icons created by Smashicons - Flaticon<a href="https://www.flaticon.com/free-icons/hiking" title="hiking icons">↩</a></sup>
-<sup id="fn2">2. Book icons created by Freepik - Flaticon<a href="https://www.flaticon.com/free-icons/book" title="book icons">↩</a></sup>
-<sup id="fn3">3. Chopsticks icons created by yukyik - Flaticon<a href="https://www.flaticon.com/free-icons/chopsticks" title="chopsticks icons">↩</a></sup>
-<sup id="fn4">4. Bicycle icons created by shmai - Flaticon<a href="https://www.flaticon.com/free-icons/bicycle" title="bicycle icons">↩</a></sup>
-</body>
+  <head>
+    <!-- Include Leaflet CSS and JavaScript -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Include Leaflet-GPX plugin -->
+    <script src="https://unpkg.com/leaflet-gpx@1.4.1/gpx.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <!-- Bootstrap Font Icon CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-image">
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="tool.html">Tool</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="header">
+      <p>
+        <img src="images\hiking_2.png" /><img src="images\track.png" /><img
+          src="images\chopsticks.png"
+        /><img src="images\reading-book.png" />
+      </p>
+      <p>California Uncovered: Hiking, Cycling, and Savoring SoCal</p>
+    </div>
+    <div class="main">
+      <h1>2023 Activities</h1>
+      <br /><br />
+      <h3><i class="bi bi-diamond"></i> Hiking</h3>
+      <div class="content">
+        <div class="text">
+          <h6>
+            <a
+              href="https://www.alltrails.com/trail/us/california/telegraph-peak-via-manker-flat-and-baldy-notch"
+              ><i class="bi bi-caret-right"></i>Telegraph Peak via Manker Flat
+              and Baldy Notch</a
+            >
+          </h6>
+          <p>
+            Length: 13.21 mi<br />Elevation Gain: 3,669 ft<br />Route Type:
+            Out&Back<br />Difficultiy: Hard<br />Time: 5:18<br />Parking: Easy
+            (Adventure Pass required)
+          </p>
+        </div>
+        <div class="image">
+          <img src="images\telegraph_peak.jpg" />
+        </div>
+      </div>
+      <hr style="border: none; border-top: 2px dotted black" />
+      <div class="content">
+        <div class="text">
+          <h6>
+            <a
+              href="https://www.alltrails.com/trail/us/california/josephine-peak-trail"
+              ><i class="bi bi-caret-right"></i> Josephine Peak Trail</a
+            >
+          </h6>
+          <p>
+            Length: 7.4 mi<br />Elevation Gain: 1843 ft<br />Route Type:
+            Out&Back<br />Difficultiy: Moderate<br />Time: 2:48<br />Parking:
+            Easy
+          </p>
+        </div>
+        <div class="image">
+          <img src="images\josephine_peak.jpg" />
+        </div>
+      </div>
+      <p>Trail Map</p>
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1GUbr3dATsEN7JpbeFlbMSlp2T2tisiM&ehbc=2E312F&noprof=1"
+        width="640"
+        height="480"
+      ></iframe>
+      <hr style="border: none; border-top: 2px dotted black" />
+    </div>
+    <hr />
+    <sup id="fn1"
+      >1. Hiking icons created by Smashicons - Flaticon<a
+        href="https://www.flaticon.com/free-icons/hiking"
+        title="hiking icons"
+        >↩</a
+      ></sup
+    >
+    <sup id="fn2"
+      >2. Book icons created by Freepik - Flaticon<a
+        href="https://www.flaticon.com/free-icons/book"
+        title="book icons"
+        >↩</a
+      ></sup
+    >
+    <sup id="fn3"
+      >3. Chopsticks icons created by yukyik - Flaticon<a
+        href="https://www.flaticon.com/free-icons/chopsticks"
+        title="chopsticks icons"
+        >↩</a
+      ></sup
+    >
+    <sup id="fn4"
+      >4. Bicycle icons created by shmai - Flaticon<a
+        href="https://www.flaticon.com/free-icons/bicycle"
+        title="bicycle icons"
+        >↩</a
+      ></sup
+    >
+  </body>
 </html>
